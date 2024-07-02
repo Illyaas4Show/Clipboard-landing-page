@@ -5,83 +5,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Clipboard landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <!-- Hero section -->
+  <section id="hero">
+    <!-- container -->
+    <div class="container">
+      <picture class="logo">
+        <img aria-hidden="true" decoding="async" src="/images/logo.webp" alt="logo" width="390" height="390">
+      </picture>
+      <h1>A history of everything you copy</h1>
+      <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+      <div class="hero-buttons">
+        <button id="ios-button">Download for iOS</button>
+        <button id="mac-button">Download for Mac</button>
+      </div>
+    </div>
+    <!-- Background image -->
+     <picture>
+      <source media="(max-width: 600px)" srcset="/images/bg-header-mobile.webp">
+      <source media="(min-width: 601px)" srcset="/images/bg-header-desktop.webp">
+      <img aria-hidden="true" src="/images/bg-header-desktop.webp" alt="" width="1439" height="363">
+     </picture>
+  </section>
 
-  A history of everything you copy
+  <!-- About section -->
+   <section id="about">
+    <h2>Keep track of your snippets</h2>
+    <p>Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+   </section>
 
-  Clipboard allows you to track and organize everything you 
-  copy. Instantly access your clipboard on all your devices.
+   <!-- Services section -->
+    <section id="services">
+      <picture>
+        <source media="(max-width: 600px)" srcset="/images/image-computer.webp">
+        <source media="(min-width: 601px)" srcset="/images/image-computer.webp">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/images/image-computer.webp" alt="" width="752" height="572">
+      </picture>
 
-  Download for iOS
-  Download for Mac
+      <div class="info">
+        <div>
+          <h3>Quick Search</h3>
+          <p>Easily search your snippets by content, category, web address, application, and more.</p>
+        </div>
+        <div>
+          <h3>iCloud Sync</h3>
+          <p>Instantly saves and syncs snippets across all your devices.</p>
+        </div>
+        <div>
+          <h3>Complete History</h3>
+          <p>Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+      </div>
+    </section>
 
-  Keep track of your snippets
+    <section id="access">
+      <h2>Access Clipboard anywhere</h2>
+      <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+      <picture>
+        <source media="(max-width: 600px)" srcset="/images/image-devices.webp">
+        <source media="(min-width: 601px)" srcset="/images/image-devices.webp">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/images/image-devices.webp" alt="" width="905" height="575">
+      </picture>
+    </section>
 
-  Clipboard instantly stores any item you copy in the cloud, 
-  meaning you can access your snippets immediately on all your 
-  devices. Our Mac and iOS apps will help you organize everything.
+    <section id="supercharge">
+      <h2>Supercharge your workflow</h2>
+      <p>We’ve got the tools to boost your productivity.</p>
+      <div>
+        <div class="blacklists">
+          <img aria-hidden="true" loading="lazy" decoding="async" src="/images/icon-blacklist.webp" alt="" width="137" height="125">
+          <h3>Creat blacklists</h3>
+          <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+        </div>
+        <div class="snippets">
+          <img aria-hidden="true" loading="lazy" decoding="async" src="/images/icon-text.webp" alt="" width="112" height="100">
+          <h3>Plain text snippets</h3>
+          <p>Remove unwanted formatting from copied text for a consistent look.</p>
+        </div>
+        <div class="preview">
+          <img aria-hidden="true" loading="lazy" decoding="async" src="/images/icon-preview.webp" alt="" width="156" height="100">
+          <h3>Sneak preview</h3>
+          <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+        </div>
+      </div>
+    </section>
 
-  Quick Search
+    <!-- Companies section -->
+     <section>
+      <img loading="lazy" decoding="async" src="/images/logo-google.webp" alt="Google" width="165" height="49">
+      <img loading="lazy" decoding="async" src="/images/logo-ibm.webp" alt="IBM" width="139" height="51">
+      <img loading="lazy" decoding="async" src="/images/logo-microsoft.webp" alt="Google" width="161" height="35">
+      <img loading="lazy" decoding="async" src="/images/logo-hp.webp" alt="Google" width="135" height="56">
+      <img loading="lazy" decoding="async" src="/images/logo-vector-graphics.webp" alt="Google" width="125" height="30">
+     </section>
 
-  Easily search your snippets by content, category, web address, application, and more.
-
-  iCloud Sync
-
-  Instantly saves and syncs snippets across all your devices.
-
-  Complete History
-
-  Retrieve any snippets from the first moment you started using the app.
-
-  Access Clipboard anywhere
-
-  Whether you’re on the go, or at your computer, you can access all your Clipboard 
-  snippets in a few simple clicks.
-
-  Supercharge your workflow
-
-  We’ve got the tools to boost your productivity.
-
-  Create blacklists
-
-  Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-
-  Plain text snippets
-
-  Remove unwanted formatting from copied text for a consistent look.
-
-  Sneak preview
-
-  Quick preview of all snippets on your Clipboard for easy access.
-
-  Clipboard for iOS and Mac OS
-
-  Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-  and you’re ready to start adding to your clipboard.
-
-  Download for iOS
-  Download for Mac
-
-  FAQs
-  Contact Us
-  Privacy Policy
-  Press Kit
-  Install Guide
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+     <!-- Call to action -->
+      <section>
+        <h2>Clipboard for iOS and Mac OS</h2>
+        <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+        <div class="hero-buttons">
+          <button id="ios-button">Download for iOS</button>
+          <button id="mac-button">Download for Mac</button>
+        </div>
+      </section>
 </body>
+
+<!-- Footer -->
+<footer>
+  <div class="footer">
+
+    <picture class="logo">
+      <img aria-hidden="true" decoding="async" src="/images/logo.webp" alt="logo" loading="lazy" width="390" height="390">
+    </picture>
+
+    <ul class="links">
+      <li><a href="">FAQs</a></li>
+      <li><a href="">Privacy Policy</a></li>
+      <li><a href="">Install Guide</a></li>
+      <li><a href="">Contact Us</a></li>
+      <li><a href="">Press Kit</a></li>
+    </ul>
+
+    <ul class="socials">
+      <li><a href=""><img decoding="async" src="/images/icon-facebook.webp" alt="logo" loading="lazy" width="75" height="75"></a></li>
+      <li><a href=""><img decoding="async" src="/images/icon-twitter.webp" alt="logo" loading="lazy" width="75" height="62"></a></li>
+      <li><a href=""><img decoding="async" src="/images/icon-instagram.webp" alt="logo" loading="lazy" width="75" height="75"></a></li>
+    </ul>
+  </div>
+</footer>
 </html>
