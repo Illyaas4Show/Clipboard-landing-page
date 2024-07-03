@@ -19,9 +19,7 @@
   <section id="hero">
     <!-- container -->
     <div class="container">
-      <picture class="logo">
-        <img aria-hidden="true" decoding="async" src="/images/logo.webp" alt="logo" width="390" height="390">
-      </picture>
+      <img class="logo" aria-hidden="true" decoding="async" src="/images/logo.svg" alt="logo" width="390" height="390">
       <h1>A history of everything you copy</h1>
       <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
       <div class="hero-buttons">
@@ -30,11 +28,11 @@
       </div>
     </div>
     <!-- Background image -->
-     <picture>
+    <picture class="bg-header">
       <source media="(max-width: 600px)" srcset="/images/bg-header-mobile.webp">
       <source media="(min-width: 601px)" srcset="/images/bg-header-desktop.webp">
       <img aria-hidden="true" src="/images/bg-header-desktop.webp" alt="" width="1439" height="363">
-     </picture>
+    </picture>
   </section>
 
   <!-- About section -->
@@ -68,22 +66,27 @@
     </section>
 
     <section id="access">
-      <h2>Access Clipboard anywhere</h2>
-      <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
-      <picture>
-        <source media="(max-width: 600px)" srcset="/images/image-devices.webp">
-        <source media="(min-width: 601px)" srcset="/images/image-devices.webp">
-        <img aria-hidden="true" loading="lazy" decoding="async" src="/images/image-devices.webp" alt="" width="905" height="575">
-      </picture>
+      <div class="access-info">
+        <h2>Access Clipboard anywhere</h2>
+        <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+      </div>
+      <div class="access-image">
+        <picture>
+          <source media="(max-width: 600px)" srcset="/images/image-devices.webp">
+          <source media="(min-width: 601px)" srcset="/images/image-devices.webp">
+          <img aria-hidden="true" loading="lazy" decoding="async" src="/images/image-devices.webp" alt="" width="905" height="575">
+        </picture>
+      </div>
+      
     </section>
 
     <section id="supercharge">
       <h2>Supercharge your workflow</h2>
-      <p>We’ve got the tools to boost your productivity.</p>
+      <p class="supercharge-info">We’ve got the tools to boost your productivity.</p>
       <div>
         <div class="blacklists">
           <img aria-hidden="true" loading="lazy" decoding="async" src="/images/icon-blacklist.webp" alt="" width="137" height="125">
-          <h3>Creat blacklists</h3>
+          <h3>Create blacklists</h3>
           <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
         </div>
         <div class="snippets">
@@ -100,7 +103,7 @@
     </section>
 
     <!-- Companies section -->
-     <section>
+     <section class="companies-section">
       <img loading="lazy" decoding="async" src="/images/logo-google.webp" alt="Google" width="165" height="49">
       <img loading="lazy" decoding="async" src="/images/logo-ibm.webp" alt="IBM" width="139" height="51">
       <img loading="lazy" decoding="async" src="/images/logo-microsoft.webp" alt="Google" width="161" height="35">
@@ -109,7 +112,7 @@
      </section>
 
      <!-- Call to action -->
-      <section>
+      <section class="cta">
         <h2>Clipboard for iOS and Mac OS</h2>
         <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
         <div class="hero-buttons">
@@ -122,23 +125,31 @@
 <!-- Footer -->
 <footer>
   <div class="footer">
-
-    <picture class="logo">
-      <img aria-hidden="true" decoding="async" src="/images/logo.webp" alt="logo" loading="lazy" width="390" height="390">
-    </picture>
-
-    <ul class="links">
-      <li><a href="">FAQs</a></li>
-      <li><a href="">Privacy Policy</a></li>
-      <li><a href="">Install Guide</a></li>
-      <li><a href="">Contact Us</a></li>
-      <li><a href="">Press Kit</a></li>
-    </ul>
+    <img class="footer-logo" aria-hidden="true" decoding="async" src="/images/logo.svg" alt="logo" loading="lazy" width="390" height="390">
+    <div class="links">
+      <div class="c1">
+        <ul>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="c2">
+        <ul>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Press Kit</a></li>
+        </ul>
+      </div>
+      <div class="c3">
+        <ul>
+          <li><a href="">Install Guide</a></li>
+        </ul>
+      </div>
+    </div>
 
     <ul class="socials">
-      <li><a href=""><img decoding="async" src="/images/icon-facebook.webp" alt="logo" loading="lazy" width="75" height="75"></a></li>
-      <li><a href=""><img decoding="async" src="/images/icon-twitter.webp" alt="logo" loading="lazy" width="75" height="62"></a></li>
-      <li><a href=""><img decoding="async" src="/images/icon-instagram.webp" alt="logo" loading="lazy" width="75" height="75"></a></li>
+      <li><a href=""><img decoding="async" src="/images/icon-facebook.svg" alt="logo" loading="lazy" width="75" height="75"></a></li>
+      <li><a href=""><img decoding="async" src="/images/icon-twitter.svg" alt="logo" loading="lazy" width="75" height="62"></a></li>
+      <li><a href=""><img decoding="async" src="/images/icon-instagram.svg" alt="logo" loading="lazy" width="75" height="75"></a></li>
     </ul>
   </div>
 </footer>
