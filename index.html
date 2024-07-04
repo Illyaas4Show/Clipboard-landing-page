@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clipboard allows yout to track and organize everything you copy. Instantly access your clipboard on all your devices.">
+  <meta name="keywords" content="Clipboard, History, iOS, Mac">
+  <meta name="author" content="Illyaas Sowunmi">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
@@ -10,7 +13,7 @@
   <link rel="preload" href="/fonts/bai-jamjuree-v11-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href="/images/bg-header-desktop.webp">
   <link rel="preload" as="image" href="/images/bg-header-mobile.webp">
-  <link rel="preload" as="image" href="/images/logo.webp">
+  <link rel="preload" as="image" href="/images/logo.svg">
   
   <title>Frontend Mentor | Clipboard landing page</title>
 </head>
@@ -43,11 +46,9 @@
 
    <!-- Services section -->
     <section id="services">
-      <picture>
-        <source media="(max-width: 600px)" srcset="/images/image-computer.webp">
-        <source media="(min-width: 601px)" srcset="/images/image-computer.webp">
-        <img aria-hidden="true" loading="lazy" decoding="async" src="/images/image-computer.webp" alt="" width="752" height="572">
-      </picture>
+      <div class="services-image">
+        <img aria-hidden="true" decoding="async" src="/images/image-computer.webp" alt="" width="752" height="572">
+      </div>
 
       <div class="info">
         <div>
@@ -83,7 +84,7 @@
     <section id="supercharge">
       <h2>Supercharge your workflow</h2>
       <p class="supercharge-info">We’ve got the tools to boost your productivity.</p>
-      <div>
+      <div class="cards">
         <div class="blacklists">
           <img aria-hidden="true" loading="lazy" decoding="async" src="/images/icon-blacklist.webp" alt="" width="137" height="125">
           <h3>Create blacklists</h3>

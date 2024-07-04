@@ -29,7 +29,7 @@ body {
 
 p {
   line-height: 1.5rem;
-  color: hsl(201, 11%, 66%);
+  color: hsl(210, 10%, 33%);
 }
 
 h1, h2, h3 {
@@ -42,7 +42,8 @@ HERO SECTION
 #hero {
   position: relative;
   width: 100%;
-  height: 726px;
+  /* height: 726px; */
+  margin-bottom: 6rem;
 }
 
 #hero .container {
@@ -65,7 +66,7 @@ HERO SECTION
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 46%;
   object-fit: cover;
 }
 
@@ -83,7 +84,7 @@ HERO SECTION
 }
 
 h1 {
-  font-size: 1.95rem;
+  font-size: 1.98rem;
   margin-block: 1rem;
 }
 
@@ -102,14 +103,38 @@ h1 + p {
   justify-content: center;
 }
 
+#ios-button:hover {
+  filter: brightness(1.1);
+}
+
+#mac-button:hover {
+  filter: brightness(1.2);
+}
+
 #ios-button,
 #mac-button {
-  padding: 15px 89px;
+  padding: 15px 30px;
   border: none;
   border-radius: 30px;
   font-size: 16px;
   color: white;
-  cursor: pointer;
+}
+
+@media (max-width:485px) {
+  #ios-button,
+  #mac-button {
+    padding: 15px 89px;
+  }
+}
+
+@media (min-width:485px) {
+  .hero-buttons {
+    gap: 1rem;
+  }
+
+  .bg-header img {
+    height: 58%;
+  }
 }
 
 #ios-button {
@@ -130,6 +155,10 @@ ABOUT SECTION
 #about {
   padding-inline: 2.1rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #about h2 {
@@ -139,6 +168,7 @@ ABOUT SECTION
 
 #about p {
   margin-bottom: 4rem;
+  max-width: 630px;
 }
 
 
@@ -151,12 +181,16 @@ SERVICES
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
 }
 
-#services picture img {
-  max-width: 100%;
+#services .info {
+  max-width: 385px;
+}
+
+#services div img {
+  max-width: 95%;
   height: auto;
   margin-bottom: 3rem;
 }
@@ -170,6 +204,37 @@ SERVICES
   margin-bottom: 3rem;
 }
 
+@media (min-width: 885px) {
+  #services .info {
+    text-align: start;
+    padding: 1.5rem;
+  }
+
+  #services {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1136px) {
+  #services {
+    justify-content: center;
+  }
+
+  #services div {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1136px) {
+  #services div img {
+    transform: translateX(-47px);
+  }
+
+  #services .info {
+    margin-top: 2rem;
+  }
+}
+
 
 /* 
 ACCESS SECTION
@@ -178,6 +243,9 @@ ACCESS SECTION
 #access {
   text-align: center;
   margin-top: 8.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #access .access-info {
@@ -195,6 +263,7 @@ ACCESS SECTION
 
 #access div p {
   margin-bottom: 3.5rem;
+  max-width: 600px;
 }
 
 #access picture img {
@@ -214,7 +283,7 @@ SUPERCHARGE SECTION
 
 #supercharge h2 {
   font-size: 1.7rem;
-  padding-top: 6rem;
+  padding-top: 4rem;
   padding-bottom: .7rem;
 }
 
@@ -237,6 +306,17 @@ SUPERCHARGE SECTION
   margin-bottom: 3rem;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cards div {
+  max-width: 350px;
+}
+
 
 /* 
 COMPANIES SECTION
@@ -252,15 +332,17 @@ COMPANIES SECTION
   gap: 5rem;
 }
 
-
 /* 
 CALL TO ACTION
 */
 
 .cta {
   padding-inline: 2.1rem;
-  padding-block: 4rem 12rem;
+  padding-block: 4rem 8rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cta h2 {
@@ -271,6 +353,7 @@ CALL TO ACTION
 .cta p {
   margin-bottom: 3rem;
   padding-inline: .1rem;
+  max-width: 600px;
 }
 
 
@@ -279,7 +362,8 @@ FOOTER
 */
 
 footer {
-  padding: 7rem;
+  padding-inline: 7rem;
+  padding-block: 3rem;
   background-color: hsla(202, 11%, 66%, 0.1);
   text-align: center;
 }
@@ -288,7 +372,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -324,6 +408,33 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: space-around;
+  width: clamp(375px, 50%, 800px);
+}
+
+.links a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+@media (min-width: 790px) {
+  .footer-logo {
+    margin-bottom: 0;
+  }
+
+  .socials img {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 411px) {
+  .c1, .c2, .c3 {
+    text-align: start;
+  }
+}
+
+@media (min-width: 662px) {
+  footer {
+    padding: 1rem 7rem;
+  }
 }
