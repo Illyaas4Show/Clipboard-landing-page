@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-My aim for the challenge was to see if I could successfully make a full web page with 100 performance score on google speed test as I want to add that to one of my qualities and skills to enhance my portfolio. I was able to acheive this but I haven't got 100 accross the board yet although it is a design fault I belive as the contrast of the text isn't enough so I might have to go against the design for that. I learnt a lot about compressing images, changing their file types and using the <picture> element to make images responsive and lightweight. I also learnt about preloading images for the landing section and lazyloading images for other images to increase page speed. I improved my flexbox skills to make responsive designs. It felt like the design on the challenge has mobile and desktop versions not match each other but I'm not sure.
+My aim for the challenge was to see if I could successfully make a full web page with 100 performance score on google speed test as I want to add that to one of my qualities and skills to enhance my portfolio. I was able to acheive this but I haven't got 100 accross the board yet although it is a design fault I belive as the contrast of the text isn't enough so I might have to go against the design for that. I learnt a lot about compressing images, changing their file types and using the picture element to make images responsive and lightweight. I also learnt about preloading images for the landing section and lazyloading images for other images to increase page speed. I improved my flexbox skills to make responsive designs. It felt like the design on the challenge has mobile and desktop versions not match each other but I'm not sure.
 
 ### Continued development
 
