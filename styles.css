@@ -103,16 +103,16 @@ h1 + p {
   justify-content: center;
 }
 
-#ios-button:hover {
+.ios-button:hover {
   filter: brightness(1.1);
 }
 
-#mac-button:hover {
+.mac-button:hover {
   filter: brightness(1.2);
 }
 
-#ios-button,
-#mac-button {
+.ios-button,
+.mac-button {
   padding: 15px 30px;
   border: none;
   border-radius: 30px;
@@ -121,8 +121,8 @@ h1 + p {
 }
 
 @media (max-width:485px) {
-  #ios-button,
-  #mac-button {
+  .ios-button,
+  .mac-button {
     padding: 15px 89px;
   }
 }
@@ -137,12 +137,12 @@ h1 + p {
   }
 }
 
-#ios-button {
+.ios-button {
   background-color: hsl(171, 66%, 44%);
   box-shadow: 0 9px 13px hsla(171, 66%, 44%, 0.3), 0 3px hsla(171, 66%, 38%);
 }
 
-#mac-button {
+.mac-button {
   background-color: hsl(233, 100%, 69%);
   box-shadow: 0 9px 13px hsl(233, 100%, 69%,0.3), 0 3px hsl(233, 100%, 63%);
 }

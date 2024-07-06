@@ -18,33 +18,36 @@
   <title>Frontend Mentor | Clipboard landing page</title>
 </head>
 <body>
-  <!-- Hero section -->
-  <section id="hero">
-    <!-- container -->
-    <div class="container">
-      <img class="logo" aria-hidden="true" decoding="async" src="/images/logo.svg" alt="logo" width="390" height="390">
-      <h1>A history of everything you copy</h1>
-      <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
-      <div class="hero-buttons">
-        <button id="ios-button">Download for iOS</button>
-        <button id="mac-button">Download for Mac</button>
+  <header>
+    <!-- Hero section -->
+    <section id="hero">
+      <!-- container -->
+      <div class="container">
+        <img class="logo" aria-hidden="true" decoding="async" src="/images/logo.svg" alt="logo" width="390" height="390">
+        <h1>A history of everything you copy</h1>
+        <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+        <div class="hero-buttons">
+          <button class="ios-button">Download for iOS</button>
+          <button class="mac-button">Download for Mac</button>
+        </div>
       </div>
-    </div>
-    <!-- Background image -->
-    <picture class="bg-header">
-      <source media="(max-width: 600px)" srcset="/images/bg-header-mobile.webp">
-      <source media="(min-width: 601px)" srcset="/images/bg-header-desktop.webp">
-      <img aria-hidden="true" src="/images/bg-header-desktop.webp" alt="" width="1439" height="363">
-    </picture>
-  </section>
+      <!-- Background image -->
+      <picture class="bg-header">
+        <source media="(max-width: 600px)" srcset="/images/bg-header-mobile.webp">
+        <source media="(min-width: 601px)" srcset="/images/bg-header-desktop.webp">
+        <img aria-hidden="true" src="/images/bg-header-desktop.webp" alt="" width="1439" height="363">
+      </picture>
+    </section>
+  </header>
+  
+  <main>
+    <!-- About section -->
+    <section id="about">
+      <h2>Keep track of your snippets</h2>
+      <p>Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+    </section>
 
-  <!-- About section -->
-   <section id="about">
-    <h2>Keep track of your snippets</h2>
-    <p>Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
-   </section>
-
-   <!-- Services section -->
+    <!-- Services section -->
     <section id="services">
       <div class="services-image">
         <img aria-hidden="true" decoding="async" src="/images/image-computer.webp" alt="" width="752" height="572">
@@ -104,54 +107,55 @@
     </section>
 
     <!-- Companies section -->
-     <section class="companies-section">
+    <div class="companies-section">
       <img loading="lazy" decoding="async" src="/images/logo-google.webp" alt="Google" width="165" height="49">
       <img loading="lazy" decoding="async" src="/images/logo-ibm.webp" alt="IBM" width="139" height="51">
       <img loading="lazy" decoding="async" src="/images/logo-microsoft.webp" alt="Google" width="161" height="35">
       <img loading="lazy" decoding="async" src="/images/logo-hp.webp" alt="Google" width="135" height="56">
       <img loading="lazy" decoding="async" src="/images/logo-vector-graphics.webp" alt="Google" width="125" height="30">
-     </section>
-
-     <!-- Call to action -->
-      <section class="cta">
-        <h2>Clipboard for iOS and Mac OS</h2>
-        <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
-        <div class="hero-buttons">
-          <button id="ios-button">Download for iOS</button>
-          <button id="mac-button">Download for Mac</button>
-        </div>
-      </section>
-</body>
-
-<!-- Footer -->
-<footer>
-  <div class="footer">
-    <img class="footer-logo" aria-hidden="true" decoding="async" src="/images/logo.svg" alt="logo" loading="lazy" width="390" height="390">
-    <div class="links">
-      <div class="c1">
-        <ul>
-          <li><a href="">FAQs</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="c2">
-        <ul>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Press Kit</a></li>
-        </ul>
-      </div>
-      <div class="c3">
-        <ul>
-          <li><a href="">Install Guide</a></li>
-        </ul>
-      </div>
     </div>
 
-    <ul class="socials">
-      <li><a href=""><img decoding="async" src="/images/icon-facebook.svg" alt="logo" loading="lazy" width="75" height="75"></a></li>
-      <li><a href=""><img decoding="async" src="/images/icon-twitter.svg" alt="logo" loading="lazy" width="75" height="62"></a></li>
-      <li><a href=""><img decoding="async" src="/images/icon-instagram.svg" alt="logo" loading="lazy" width="75" height="75"></a></li>
-    </ul>
-  </div>
-</footer>
+    <!-- Call to action -->
+    <section class="cta">
+      <h2>Clipboard for iOS and Mac OS</h2>
+      <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+      <div class="hero-buttons">
+        <button class="ios-button">Download for iOS</button>
+        <button class="mac-button">Download for Mac</button>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <img class="footer-logo" aria-hidden="true" decoding="async" src="/images/logo.svg" alt="logo" loading="lazy" width="390" height="390">
+      <div class="links">
+        <div class="c1">
+          <ul>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="c2">
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="c3">
+          <ul>
+            <li><a href="">Install Guide</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="socials">
+        <li><a href=""><img decoding="async" src="/images/icon-facebook.svg" alt="logo" loading="lazy" width="75" height="75"></a></li>
+        <li><a href=""><img decoding="async" src="/images/icon-twitter.svg" alt="logo" loading="lazy" width="75" height="62"></a></li>
+        <li><a href=""><img decoding="async" src="/images/icon-instagram.svg" alt="logo" loading="lazy" width="75" height="75"></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
 </html>
